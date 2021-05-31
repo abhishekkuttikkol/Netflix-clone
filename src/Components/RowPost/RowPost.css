@@ -1,0 +1,43 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform .4s;
+    border-radius: 15px;
+    
+}    
+
+.smallPoster{
+    max-height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform .5s;
+    border-radius: 10px
+}
+
+.poster:hover {
+    transform: scale(1.08); 
+    border-style: solid;
+  }
+
+.smallPoster:hover {
+    transform: scale(1.08);
+    border-style: solid; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
